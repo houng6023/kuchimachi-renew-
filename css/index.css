@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+body {font-family: 'Londrina Outline', cursive;
+      font-family: 'Bigshot One', cursive;
+      font-family: 'Open Sans', sans-serif;}
+
+.row {max-width: 1140px; margin: 50px auto; padding: 0;}
+h2 {font-size: 20px; color: rgb(109, 109, 109); font-weight: bolder; margin-bottom: 10px;}
+h3 {font-size: 30px;}
+
+header {position: relative;}
+header .right {float: right;}
+header h1 { font-size: 40px; display: inline; font-family: 'Bigshot One', cursive;}
+header .user > li {float: left; font-size: 20px; color: #fff;
+                    text-shadow: 0 0 2px #000; position: relative; 
+                    font-family: 'Lato', sans-serif;}
+header .user > li > a {margin: 15px; display: inline-block;}
+
+header .user > li:nth-child(3) {width: 1px; height: 20px; background: #888;margin: 15px 7px; }
+header .user2 {border: 1px solid #999; padding: 15px; display:none; transition: all 0.5s; position: absolute; 
+                  width: 100px; top: 100%; left: 50%; transform: translate(-50%); z-index: 99999; background: #fff;}
+header .user > li:hover .user2 {display:block;}
+
+header .user2 li {color: #000; text-shadow: none; float: none; text-align: center; font-size: 12px;
+                   padding: 5px;}
+header .user2 li:hover {color: #888;}
+header .left {position: relative; margin-top: 200px;}
+header .left > ul {  font-family: 'Lato', sans-serif;  }
+header .left > ul > li {line-height: 2;}
+header .left > ul > li:first-child {font-weight: bolder;}
+header .left > ul > li:last-child {color: rgb(202, 160, 226);}
+
+
+
+/* 히든메뉴 */
+.hidden {height: 100vh; width: 300px; background: #fff; background: rgba(253, 234, 205, 0.5);
+position: fixed; top: 20%; right: -270px; z-index: 9999999; font-family: 'Lato', sans-serif;
+}
+.hidden.on {right: 0;}
+.hidden .h_box {padding: 50px; position: relative;}
+.hidden .h_box >a {position: absolute; top: 10px; right: 10px;}
+.hidden .h_box .h_nav {line-height: 2.3;}
+.hidden .h_box .h_nav  > li {color:#000;  font-family: 'Bigshot One', cursive;}
+.hidden .h_box .h_nav .nav_in li {background: rgba(255, 253, 253, 0.3);
+       display: none; padding-left: 50px;}
+.hidden .h_box .h_nav > li:hover >  .nav_in > li {display: block;} 
+
+/* (article0) */
+.article0 {font-family: 'Roboto', sans-serif; height: 100vh; position: relative;}
+.article0 > p {font-size: 100px; text-shadow:0 0 2px rgb(129, 129, 129); color: #fff;
+      margin: 100px 0 50px; position: absolute; top: 30%; transform: translatey(-50%);}
+.article0 > p .shine {font-size: 40px; color: #000;}
+.article0  .art0line {width: 150px; height: 1px; background: #000; 
+                        position: absolute; bottom: 40%; right: 0%; transform: rotate(310deg);}
+
+
+/* NEw in (article5) */ 
+.article5 {position: relative;}
+.article5 ul > li {float: left; width: 16.6666666%;}
+.article5 ul > li:hover {opacity: 0.6;}
+.article5 > a {position: absolute; right: 50%; padding: 5px 20px; background: #000; border-radius: 5px; color: #fff; margin-bottom: 100px;}
+.article5 > a:hover {background:#fff; border:1px solid #000; color: #000;}
+
+
+
+/* MD추천 (article1) */
+h3 {border-bottom:0.5px solid rgb(110, 110, 110) ; padding-bottom: 10px;
+      font-family: 'Roboto', sans-serif; color:#000; margin-bottom: 50px;}
+.article1 .md_slide_gruop {position: relative;}
+.article1 .md_slide_gruop .md { height: 500px; }
+.article1 .md_slide_gruop .md_slide1 { background:url(../img/md1.jpeg) no-repeat center ;
+      background-size: cover;}
+.article1 .md_slide_gruop .md_slide2 {background:url(../img/md2.jpeg) no-repeat center ;
+            background-size: cover;}
+.article1 .md_slide_gruop .md_slide3 {background:url(../img/md3.jpeg) no-repeat center ;
+      background-size: cover;}
+.article1 .md_slide_gruop .md_slide4 {background:url(../img/md4.jpeg) no-repeat center ;
+      background-size: cover;}
+.article1 .md_slide_gruop .md_slide5 {background:url(../img/md5.jpeg) no-repeat center ;
+      background-size: cover;}
+.article1 .md_slide_gruop .slick-arrow {
+      position: absolute;  top: 3%;  font-size: 50px; background: transparent;
+      color: #fff; opacity: 0.2;}
+.article1 .md_slide_gruop .slick-arrow.prev {left: 30px; z-index: 999;}
+.article1 .md_slide_gruop .slick-arrow.next {right: 30px; z-index: 999;}
+.article1 .md_slide_gruop .slick-dots {position: absolute; top: 3%; left: 50%; transform: translateX(-50%);}
+.article1 .md_slide_gruop .slick-dots li {float: left; padding: 0 5px;}
+.article1 .md_slide_gruop .slick-dots li button {width: 30px; height: 3px; border-radius: 1.5px; border: 0.01px solid #fff;
+color: transparent; background: transparent; opacity: 0.3;}
+.article1 .md_slide_gruop .slick-dots li.slick-active button { background: #fff;}
+
+
+
+
+
+
+
+
+
+
+/* 픽스슬라이드  (article3)*/
+.article3 { height: 300px; background: url(../img/fix.jpeg) no-repeat center top;
+            background-size:cover ; background-attachment: fixed; position: relative;
+            text-align: center;}
+.article3::before { color: #000; position: absolute; top: 0; bottom: 0; right: 0; left: 0;
+background: rgba(240, 240, 240, 0.5); 
+font-size: 30px; padding-top: 100px; padding-bottom: 20px; }
+
+
+.article3 h3 {font-size: 30px; padding-top: 100px; padding-bottom: 30px;}
+.article3 p {color: #fff; text-shadow: 0 0 3px #000; display: inline; padding: 0px 5px;}
+.article3 p span {font-size: 12px; margin-left: 10px; color: #fff; }
+
+/* bottombaner슬라이드 (article4) */
+.baner_group {text-align: center; font-family: 'Open Sans', sans-serif; width: 100%;
+                position: relative; } 
+.baner_group .baner {height: 150px; width: 100%; }
+.baner_group .baner1 {background:  rgb(0, 0, 0); }
+.baner_group .baner > p { font-size: 25px; color:  rgb(221, 250, 194); font-weight: bolder;
+padding: 40px 0px 15px 0px;}
+.baner_group .baner > a { font-size: 13px;
+      background: rgb(198, 245, 159); padding: 5px 8px; color: rgb(2, 59, 2); border-radius: 5px;}
+.baner_group .baner2 {background: rgb(0, 0, 0); }
+.baner_group .baner2 > p { color: rgb(255, 213, 134);}
+.baner_group .baner2 > a {color: rgb(255, 213, 134); background: #000;}
+.baner_group .baner3 {background: url(../img/baner.jpeg)no-repeat bottom; background-size: cover;}
+.baner_group .baner3 > p {color: rgb(232, 248, 255);}
+.baner_group .baner3 > a {color: rgb(43, 165, 165); background: rgb(232, 248, 255);}
+.baner_group .slick-arrow {
+      position: absolute; top: 50%; transform: translate(-50%);
+      font-size: 50px;
+      background: none;
+      border: none;
+      color:transparent;}
+.baner_group .slick-arrow.prev {left: 50px; z-index: 999;}
+.baner_group .slick-arrow.next {right: 50px; z-index: 999;}
+.baner_group .slick-dots {position: absolute;left: 50%;transform: translateX(-50%); bottom: -10px;}
+.baner_group .slick-dots li {float: left; padding: 0px 7px 10px 7px; }
+.baner_group .slick-dots li button {color: transparent; height: 5px; width: 30px; border: none; border-radius: 2.5px;
+background: #fff; opacity: 0.3; }
+.baner_group .slick-dots li.slick-active button {background:transparent; border: 0.1px solid #fff;}
+
+
+
+
+/* footer구역 */
+.foot {width: 100%; background: rgb(248, 248, 248); bottom: 0; 
+      color: rgb(124, 124, 124); line-height: 2; font-family: 'Lato', sans-serif;
+}
+.foot .info li {float: left; margin: 50px 100px; font-size: 13px; position: relative;}
+.foot .info li:first-child {margin: 50px 100px 50px 0px; }
+.foot .info li:last-child {margin: 50px 0px 50px 100px; }
+.foot .info li:first-child h2 {color: #000;}
+.foot .info li:last-child i {font-size: 50px; color: rgb(0, 0, 0); margin-right: 20px;
+margin-top: 30px;}
+.foot .info li:first-child:before {display: none;}
+.foot .info li::before {content: ''; position: absolute; width: 1px; height: 100px;
+background: rgb(109, 109, 109); top: 60px; left: -50%; }
+
+
+/* New in 페이지 */
+.title {font-size: 35px; font-family: 'Bigshot One', cursive; background-color: #000;
+      color: #fff; text-align: center; padding: 10px; margin-top: 100px;}
+.new > ul > li {width: 24%; ; margin-bottom: 10px;
+float: left; border: 1px solid #fff; transition: all 0.2s; position: relative;}
+
+.new > ul > li:hover  img {opacity: 0.5;} 
+
+
+.new > ul > li::after { content: ''; position: absolute; top: 0; left: 0; right: 100%; background: #000; height: 1px; transition: all 0.5s;}
+.new > ul > li:hover::after { content: ''; position: absolute; top: 0; left: 0; right: 0; background: #000; height: 1px;}
+
+.new > ul > li::before { content: ''; position: absolute; bottom: 0; left: 100%; right: 0; background: #000;height: 1px; transition: all 0.5s ;}
+.new > ul > li:hover::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; background: #000; height: 1px; z-index: 99999;}
+
+.new > ul > li > div {position: relative;}
+
+.new > ul > li > div::after { content: ''; position: absolute; bottom: 100%; top: 0; right: 0; background: #000;width: 1px; transition: all 0.5s ; z-index: 99999;}
+.new > ul > li:hover > div::after { content: ''; position: absolute; bottom: 0; top: 0; right: 0; background: #000;width: 1px; z-index: 99999;}
+
+.new > ul > li > div::before { content: ''; position: absolute; bottom: 0; top: 100%; left: 0; background: #000;width: 1px; transition: all 0.5s; z-index: 99999;}
+.new > ul > li:hover > div::before { content: ''; position: absolute; bottom: 0; top: 0; left: 0; background: #000;width: 1px; z-index: 99999;}
+
+
+/* 로그인 */
+.login h4 {text-align: center;  background-color: #000; color: #fff; padding: 10px 0; font-size: 20px;}
+.login > form{border: 1px solid #000; width: 800px; height: 300px; margin: 200px auto; position: relative; }
+.login > form > div {position: absolute; top: 55%; left: 45%; transform: translate(-50%, -50%);}
+.login > form p {font-size: 20px;  line-height: 2; }
+.login > form p >label {display: inline-block; width: 20px;}
+.login > form input {border-bottom:  1px solid #000; width: 200px;margin-left: 20px; font-size: 20px; } 
+.login button { background: #000; color: #fff; padding: 15px; font-size: 17px; position: absolute; top: 50%;  right: 25%;}
+.login button:hover {background: #666;}
+
+/* 회원가입 */
+.join h4 {text-align: center;  background-color: #000; color: #fff; padding: 10px 0; font-size: 20px;}
+.join   form{border: 1px solid #000; width: 800px;  margin: 200px auto; position: relative;}
+
+.join .jointxt {padding: 60px 100px 30px;}
+
+.join col:nth-child(1) {width: 25%;  text-align: left;}
+.join col:nth-child(2) {width: 75%;}
+.join th {text-align: left; padding-left: 100px; line-height: 50px;}
+.join > form input {border:  1px solid #000; width: 200px; font-size: 20px; margin-bottom: 10px; } 
+.join #hp1,.join #hp2 {width: 80px;}
+.join #sms,.join #emailok {width: 30px;}
+.join .joinbt { font-size: 15px; margin: 70px auto 30px; display: block; 
+padding: 10px 25px; background: #000; border-radius: 5px; color: #fff;}
+.join .joinbt:hover {background: #fff; border: 1px solid #000; color: #000;} 

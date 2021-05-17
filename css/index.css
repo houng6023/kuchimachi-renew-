@@ -51,6 +51,9 @@ position: fixed; top: 20%; right: -270px; z-index: 9999999; font-family: 'Lato',
        display: none; padding-left: 50px;}
 .hidden .h_box .h_nav > li:hover >  .nav_in > li {display: block;} 
 
+/* 히든 호버 유도 */
+.hiddenLine {position: absolute; top:0%; left: -20%; background: #000; color: #fff; padding: 5px;}
+
 /* (article0) */
 .article0 {font-family: 'Roboto', sans-serif; height: 100vh; position: relative;}
 .article0 > p {font-size: 100px; text-shadow:0 0 2px rgb(129, 129, 129); color: #fff;
